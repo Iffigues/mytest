@@ -1,5 +1,3 @@
-#include <stdlib.h>
-
 int ft_lest(int a)
 {
 	int i;
@@ -25,7 +23,6 @@ void ft_make(int a, char *b, int c)
 		a = a / 10;
 		c--;
 	}
-//	printf("%s\n",b);
 }
 
 char *ft_itoa(int a)
@@ -40,12 +37,5 @@ char *ft_itoa(int a)
 	if (a < 0 && c--)
 		b[y++] = '-';
 	ft_make(a, &b[y], c);
-	 printf("%s\n",b);
 	return (b);
-}
-
-int main()
-{
-	ft_itoa(-8888);
-	ft_itoa(8888);
 }
