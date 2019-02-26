@@ -5,7 +5,7 @@ int count_world(char *s)
 	int c;
 
 	c = 0;
-	if (s && *s != ' ')
+	if (s && *s && *s != ' ')
 		c++;
 	while (*s)
 		if (*s++ == ' ' && *s && *s !=' ' )
